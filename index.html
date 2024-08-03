@@ -8,9 +8,8 @@
         .img{
             height: 450px;
             border-radius: 10px;
-            width: 500px;
-            object-fit: contain;
-            border-radius: 10px;
+            width: 550px;
+            object-fit: cover;
         }
         .container{
             position: relative;
@@ -54,6 +53,16 @@
             }
         imgid.src=imgs[index]
         }
+        function nextimg(){
+            if(index==imgs.length - 1){
+                index=0;
+            }
+            else{
+                index++;
+            }
+        imgid.src=imgs[index]
+        }
+
     </script>
 </body>
 </html>
